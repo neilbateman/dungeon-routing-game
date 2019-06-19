@@ -10,6 +10,11 @@ import { StorylineOneComponent } from './storyline-one/storyline-one.component';
 import { StorylineTwoComponent } from './storyline-two/storyline-two.component';
 import { QuitComponent } from './quit/quit.component';
 import { DarkPathComponent } from './dark-path/dark-path.component';
+import { AttackComponent } from './attack/attack.component';
+import { CowerComponent } from './cower/cower.component';
+import { GuideComponent } from './guide/guide.component';
+import { FinalBossComponent } from './final-boss/final-boss.component';
+
 
 
 @NgModule({
@@ -20,7 +25,11 @@ import { DarkPathComponent } from './dark-path/dark-path.component';
     StorylineOneComponent,
     StorylineTwoComponent,
     QuitComponent,
-    DarkPathComponent
+    DarkPathComponent,
+    AttackComponent,
+    CowerComponent,
+    GuideComponent,
+    FinalBossComponent,
   ],
   imports: [
     BrowserModule,

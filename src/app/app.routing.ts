@@ -6,6 +6,11 @@ import { StorylineOneComponent } from './storyline-one/storyline-one.component';
 import { StorylineTwoComponent } from './storyline-two/storyline-two.component';
 import { QuitComponent } from './quit/quit.component';
 import { DarkPathComponent } from './dark-path/dark-path.component';
+import { AttackComponent } from './attack/attack.component';
+import { CowerComponent } from './cower/cower.component';
+import { GuideComponent } from './guide/guide.component';
+import { FinalBossComponent } from './final-boss/final-boss.component';
+
 
 const appRoutes: Routes = [
 {
@@ -29,6 +34,10 @@ const appRoutes: Routes = [
   component: StorylineTwoComponent
 },
 {
+  path: 'storylineOne/darkPath/storylineTwo',
+  component: StorylineTwoComponent
+},
+{
   path: 'storylineOne/quit',
   component: QuitComponent
 },
@@ -39,8 +48,43 @@ const appRoutes: Routes = [
 {
   path: 'storylineOne/darkPath',
   component: DarkPathComponent
-}
-
+},
+{
+  path: 'storylineOne/darkPath/attack',
+  component: AttackComponent
+},
+{
+  path: 'storylineOne/storylineTwo/attack',
+  component: AttackComponent
+},
+{
+  path: 'storylineOne/darkPath/cower',
+  component: CowerComponent
+},
+{
+  path: 'storylineOne/storylineTwo/guide',
+  component: GuideComponent
+},
+{
+  path: 'storylineOne/darkPath/storylineTwo/guide',
+  component: GuideComponent
+},
+{
+  path: 'storylineOne/darkPath/attack/darkPath',
+  component: DarkPathComponent
+},
+{
+  path: 'storylineOne/storylineTwo/guide/attack',
+  component: AttackComponent
+},
+{
+  path: 'storylineOne/storylineTwo/guide/finalBoss',
+  component: FinalBossComponent
+},
+{
+  path: 'storylineOne/storylineTwo/attack/darkPath',
+  component: DarkPathComponent
+},
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
