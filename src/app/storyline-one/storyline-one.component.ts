@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Player } from '../player.model';
-import { Router } from '@angular/router';
+// import { Player } from '../player.model';
+// import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-storyline-one',
@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./storyline-one.component.css']
 })
 export class StorylineOneComponent{
-  players: Player[] = [
-    new Player("Frostdog Adorablefur", "Furry"),
-    new Player("Dorsocru, The Insane", "Dragon"),
-    new Player("Molramu Vurdut", "Dark Elf"),
-  ]
+  // players: Player[] = [
+  //   new Player("Frostdog Adorablefur", "Furry"),
+  //   new Player("Dorsocru, The Insane", "Dragon"),
+  //   new Player("Molramu Vurdut", "Dark Elf"),
+  // ]
 
   constructor() { }
 
