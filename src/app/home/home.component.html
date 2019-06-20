@@ -12,8 +12,8 @@
     <label id="characterType">Your character type: </label>
     <input id="characterType" placeholder="Dwarf centaur" #characterType>
 
-    <label id="characterDescription">Your character discription: </label>
-    <input id="characterDescription" placeholder="half pony half dwarf with a flowing beard to its hindquarters, blind in one eye but can smell feelings & spacial distance" #characterDescription>
+    <label id="characterDescription">Your character description: </label>
+    <textarea type="text" id="characterDescription" placeholder="half pony half dwarf with a flowing beard to its hindquarters, blind in one eye but can smell feelings & spacial distance" #characterDescription></textarea>
 
     <button class="btn btn-dark" (click)="submitForm(characterName.value, characterType.value, characterDescription.value); characterName.value=''; characterType.value=''; characterDescription.value=''">Submitteth thine character!</button>
   </div>
@@ -31,4 +31,4 @@
   </div>  -->
 </div>
 </div>
-<a routerLink="storylineOne">Begin Adventure!</a>
+<a routerLink="storylineOne" (click)="getPlayerById(player)">Begin Adventure!</a>

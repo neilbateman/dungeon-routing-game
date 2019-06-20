@@ -26,5 +26,4 @@ export class PlayerDetailComponent implements OnInit {
     });
     this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
   }
-
 }
