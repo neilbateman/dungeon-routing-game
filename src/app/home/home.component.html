@@ -1,4 +1,34 @@
 <h1>Welcome to generic dungeon adventure game!</h1>
 <h3>Thank you for accepting our quest! Prepare for a challenge of wit and will, and possible <strong>dismemberment.</strong></h3><br>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">You can add a new character below or choose from an existing character. Click on name to view character details.</h3>
+  </div>
+  <div class="panel-body">
 
+    <label id="characterName">Your character name: </label>
+    <input id="characterName" placeholder="Pickles Featherbotton" #characterName>
+
+    <label id="characterType">Your character type: </label>
+    <input id="characterType" placeholder="Dwarf centaur" #characterType>
+
+    <label id="characterDescription">Your character discription: </label>
+    <input id="characterDescription" placeholder="half pony half dwarf with a flowing beard to its hindquarters, blind in one eye but can smell feelings & spacial distance" #characterDescription>
+
+    <button class="btn btn-dark" (click)="submitForm(characterName.value, characterType.value, characterDescription.value); characterName.value=''; characterType.value=''; characterDescription.value=''">Submitteth thine character!</button>
+  </div>
+
+  <h3>Once you've chosen your character you are ready to begin!</h3><br>
+  <div *ngFor="let player of players | async" (click)="goToDetailPage(player)" class="panel panel-default">
+    <div class="panel-body">
+      <em>{{player.name}}</em>
+      <!-- <br{{player.characterType}} {{player.description}}</h3>
+      <div *ngIf="currentRoute === '/admin'">
+      {{player.description}}
+      <hr>
+      <app-edit-player></app-edit-player>
+    </div>
+  </div>  -->
+</div>
+</div>
 <a routerLink="storylineOne">Begin Adventure!</a>

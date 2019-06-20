@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-// import { Player } from '../player.model';
+import { Player } from '../player.model';
 // import { Router } from '@angular/router';
+import { PlayerService } from '../player.service';
 
 @Component({
   selector: 'app-storyline-one',

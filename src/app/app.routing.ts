@@ -10,7 +10,7 @@ import { AttackComponent } from './attack/attack.component';
 import { CowerComponent } from './cower/cower.component';
 import { GuideComponent } from './guide/guide.component';
 import { FinalBossComponent } from './final-boss/final-boss.component';
-
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
 
 const appRoutes: Routes = [
 {
@@ -84,6 +84,10 @@ const appRoutes: Routes = [
 {
   path: 'storylineOne/storylineTwo/attack/darkPath',
   component: DarkPathComponent
+},
+{
+  path: 'players/:id',
+  component: PlayerDetailComponent
 },
 ];
 
